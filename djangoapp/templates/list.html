@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <table border="1" width="90%">
+            <tr> 
+               <th></th>
+               <th>DATE OF APPOINTMENT</th>
+               <th>TIME OF APPOINTMENT</th>
+               
+             </tr>
+             <tbody>
+                {% for x in appData %}
+                <tr>
+                  <td>{{ x.appDate}}</td>
+                  <td>{{ x.appTime}}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+             <tr>
+               <th>Patient 1</th>
+               <td></td>
+               <td></td>
+             </tr>
+             <tr> 
+               <th>Patient 2</th>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr> 
+               <th>Patient 3</th>
+               <td></td>
+               <td></td>
+            </tr>
+           
